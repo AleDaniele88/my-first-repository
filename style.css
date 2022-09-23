@@ -1,0 +1,389 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+body {
+    background-color:#ffe6cd;
+}
+
+/* PORTADA */
+
+.presentation {
+    height: 100vh;
+    background-image: url(./assets/tomotherapy-azul.png);
+    background-size: cover;
+    background-position: 0% 50%;
+}
+
+.presentation__h1{
+    background-color:rgba(255, 255, 255, 0.75);
+    padding: 5px;
+    font-size: 60px;
+    font-weight: 400;
+    color:#58585A;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 30%;
+}
+
+.presentation__div-img{
+    background-color: rgba(255, 255, 255, 0.75);
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content:space-around;
+    
+    position: relative;
+    top: 30%;
+    opacity: 1;
+}
+
+.eslogan{
+    background-color: white;
+}
+
+.eslogan__h2{
+    color:black;
+    font-size: 2.5rem;
+    padding:30px;
+    text-align: center;
+}
+
+.prestaciones{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.prestaciones__div{
+    width: 30vw;
+    height: 300px;
+    text-align: center;
+    padding: 30px;
+    margin: 15px;
+}
+
+.prestaciones__img{
+    width: 20vw;
+    height: 200px;
+}
+
+/* TARJETA TOMOTHERAPY */
+
+.tomotherapy{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 40px;
+    background-color:#017D9F;
+    align-items: center;
+    gap: 40px; 
+}
+
+/* TARJETA SERVICIOS */
+
+.servicios{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.5rem;
+}
+.servicios__img{
+    height: 235px;
+    width: 60vw;
+    overflow: auto;
+    display: flex;
+    margin: 25px auto;
+    
+    
+}
+
+.servicios__img img{
+    width: 400px;
+    height: 200px;
+    margin: 5px;
+   
+}
+
+.tomotherapy__iframe{
+    width: 30vw;
+    height: 250px;
+    border: 3px solid white;
+}
+
+.tomotherapy__texto{
+    width: 40vw;
+    height: 250px;
+    color: white;
+    font-size: 1.3rem;
+}
+
+/* HEADER */
+
+.header__a--nav{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color:#58585A;
+    padding: 5px;
+}
+
+.header__a--nav:hover{
+    color:#ffffff;
+    border-radius: 5px;
+    background-color: #017D9F;
+}
+
+.header__logo{
+    margin-left: 30px;
+}
+
+.logo{
+    width: 240px;
+    height: 45px;
+}
+
+.header{
+    position: sticky;
+    top: 0px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 2px solid #C3CB1E;
+    z-index: 1;
+}
+
+.header__nav{
+    width: 70%;
+}
+
+.header__ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 25px;
+    list-style: none;
+}
+
+/* TITULO DE PAGINA */
+.titulo{
+    background-color:#017D9F;
+    color:white;
+    border-radius: 0 0 50px 0;
+    display: inline-block;
+    padding: 15px 35px 15px 15px;
+    font-size:x-large;
+}
+
+
+
+/* FOOTER */
+.icon{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+/* CONTACTANOS */
+
+.contacto-container{
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    font-size: 0.8rem;
+    color:#58585A;
+    gap: 100px;
+
+}
+.contacto-container__form{
+    height: 70vh;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    justify-content: space-around; 
+    padding: 20px;
+    background-color: white;
+    color: #58585A;
+    border: 2px solid #58585A;
+    border-radius:10px
+
+}
+
+.contacto-container__ul{
+    list-style: none;
+
+}
+
+.contacto-container__li{
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.contacto-container__iframe{
+    width: 400px;
+    height:250px;
+    margin-top: 10px;
+}
+
+.contacto-container__input{
+    width: 250px;
+    border: 1px solid #58585A;
+}
+
+.contacto-container__input.btn{
+    margin-top: 20px;
+}
+
+
+
+/* NOTICIAS */
+
+.buscador{
+    display: inline-block;
+    position: relative;
+    left: 50px;
+}
+
+.buscador__input{
+    text-align: center;
+    width: 400px;
+    height: 40px;
+    border: 1px solid #58585A;
+    border-radius:8px
+}
+
+.noticias__img{
+    width: 200px;
+    height:120px;
+}
+
+.noticias__article{
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 50px 150px;
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #58585A;
+    border-radius: 10px;
+}
+
+.noticias__div{
+    width: 50vw;
+    /*height: 150px;*/
+}
+
+.noticias__a{
+    text-decoration: none;
+    background-color: #017D9F;
+    color:white;
+    padding: 5px;
+    display: block;
+    margin-top: 10px;
+    width: 100px;
+    text-align: center;
+    border-radius:5px
+}
+
+/* SERVICIOS */
+
+.especialidades{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.especialidades__div{
+    width: 400px;
+    height: 200px;
+    text-align: center;
+}
+
+.especialidades__div{
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+
+.especialidades__h2{
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 10px;
+    margin-top: 50px;
+}
+
+
+.especialidades__div--radio{
+    background-image: url(assets/servicio-tomotherapy.jpg);
+}
+.especialidades__div--quimio{
+    background-image: url(assets/servicio-quimio.JPG);
+}
+.especialidades__div--transplante{
+    background-image: url(assets/servicio-medula.jpeg);
+}
+.especialidades__div--biopsia{
+    background-image: url(assets/servicio-biopsialiquida.jpg);
+}
+.especialidades__div--consultorios{
+    background-image: url(assets/servicio-consultorios.JPG);
+}
+
+/* QUIENES SOMOS*/
+
+.slide{
+    width: 100vw;
+    margin: 20px auto;
+}
+.slide__img{
+    display: inline-block;
+    width: 300px;
+    height: 150px;
+}
+
+.dependencias__article{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+
+.dependencias__img{
+    width: 25vw;
+    height: 150px;
+}
+
+.dependencias__p{
+    font-size: 0.8rem;
+    width: 50vw;
+
+}
+
+.btn{
+    width: 80px;
+    height: 40px;
+    background-color: #017D9F;
+    color: white;
+    border-radius: 8px;
+    border: none;
+}
