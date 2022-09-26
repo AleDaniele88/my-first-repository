@@ -548,7 +548,7 @@ body {
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 470px) {
     .footer-container{
         grid-template-areas: 
         "horarios" 
