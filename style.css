@@ -511,7 +511,7 @@ body {
 }
 
 
-@media (max-width: 900px) {
+@media (max-width:900px) {
 
     .header{
         justify-content: center;
@@ -548,7 +548,7 @@ body {
     }
 }
 
-@media (max-width: 470px) {
+@media (max-width:520px) {
     .footer-container{
         grid-template-areas: 
         "horarios" 
