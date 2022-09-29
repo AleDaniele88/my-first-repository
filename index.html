@@ -16,7 +16,7 @@
 
 <body>
 
-    <header class="navbar navbar-expand-lg bg-light header">
+    <header class="navbar navbar-expand-lg bg-light sticky-top header">
         <div class="container">
           <a class="navbar-brand" href="#"><img class="header__logo logo" src="./assets/logocos-remove-copy.png" alt="Logo" title="Logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,13 +61,13 @@
    
     <section class="presentation">
         <h1 class="presentation__h1">Centro Oncológico Sunchales</h1>
-        <div class="presentation__div-img">
+        <!-- <div class="presentation__div-img">
             <img class="presentation__img" src="./assets/logo-ospil.png" alt="">
             <img class="presentation__img" src="./assets/logo-atilra-remove.png" alt="">
             <img class="presentation__img" src="./assets/logo-ospil.png" alt="">
             <img class="presentation__img" src="./assets/logofundacionatilra-remov.png" alt="">
             <img class="presentation__img" src="./assets/logo-delec.svg" alt="">
-        </div>
+        </div> -->
     </section>
 
     
@@ -75,31 +75,35 @@
     <main>
         <section class="eslogan">
             <h2 class="eslogan__h2">Calidad, tecnología y compromiso al servicio de la salud</h2>
-            <div class="eslogan__div prestaciones">
-                <div class="prestaciones__div">    
-                    <img class="prestaciones__img" src="./assets/microchip-solid.svg" alt="Tecnología title="Tecnología">
-                    <h3>Última tecnología en equipos de disgnóstico y tratamiento</h3>
-                </div>
-                <div class="prestaciones__div">
-                    <img class="prestaciones__img" src="./assets/building-solid.svg" alt="Infraestructura" title="Infraestructura">
-                    <h3>Arquitectura sustentable</h3>
-                </div>
-                <div class="prestaciones__div">
-                    <img class="prestaciones__img" src="./assets/people-group-solid.svg" alt="Personal" title="Personal">
-                    <h3>Personal altamente capacitado</h3>
+            <div class="eslogan__div prestaciones container">
+                <div class="row">
+                    <div class="prestaciones__div col-lg-4">    
+                        <img class="prestaciones__img" src="./assets/microchip-solid.svg" alt="Tecnología title="Tecnología">
+                        <h3>Última tecnología en equipos de disgnóstico y tratamiento</h3>
+                    </div>
+                    <div class="prestaciones__div col-lg-4">
+                        <img class="prestaciones__img" src="./assets/building-solid.svg" alt="Infraestructura" title="Infraestructura">
+                        <h3>Arquitectura sustentable</h3>
+                    </div>
+                    <div class="prestaciones__div col-lg-4">
+                        <img class="prestaciones__img" src="./assets/people-group-solid.svg" alt="Personal" title="Personal">
+                        <h3>Personal altamente capacitado</h3>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section>
-            <article class="tomotherapy">
-                <iframe class="tomotherapy__iframe" width="560" height="315" src="https://www.youtube.com/embed/pgC-1BSDIMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="tomotherapy__texto">
-                    <h2 class="tomotherapy__h2">Somos centro de referencia en radioterapia helicoidal en Argentina</h2>
-                    <h3 class="tomotherapy__h3">¿Qué es el Tomotherapy?</h3>
-                    <p class="tomotherapy__p">El sistema Tomotherapy, establece el “Gold Standar” para la terapia de tumores, con un diseño único,
-                        un revolucionado modelo de tratamiento y una precisión en el posicionamiento del paciente. <a
-                            class="tomotherapy__a" href="">Más info...</a></p>
+            <article class="tomotherapy container-fluid">
+                <div class="row">
+                    <iframe class="tomotherapy__iframe col-sm-6" width="560" height="315" src="https://www.youtube.com/embed/pgC-1BSDIMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="tomotherapy__texto col-sm-6">
+                        <h2 class="tomotherapy__h2">Somos centro de referencia en radioterapia helicoidal en Argentina</h2>
+                        <h3 class="tomotherapy__h3">¿Qué es el Tomotherapy?</h3>
+                        <p class="tomotherapy__p">El sistema Tomotherapy, establece el “Gold Standar” para la terapia de tumores, con un diseño único,
+                            un revolucionado modelo de tratamiento y una precisión en el posicionamiento del paciente. <a
+                                class="tomotherapy__a" href="">Más info...</a></p>
+                    </div>
                 </div>
             </article>
 

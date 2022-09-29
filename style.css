@@ -16,14 +16,15 @@ body {
     height: 100vh;
     background-image: url(./assets/tomotherapy-azul.png);
     background-size: cover;
-    background-position: 0% 50%;
+    background-position: center 80%;
+    background-repeat: no-repeat;
 }
 
 .presentation__h1{
     background-color:rgba(255, 255, 255, 0.75);
     padding: 5px;
     font-size: 60px;
-    font-weight: 400;
+    font-weight: 200;
     color:#58585A;
     text-align: center;
     margin: auto;
@@ -46,44 +47,64 @@ body {
 
 .eslogan{
     background-color: white;
+    height: auto;
 }
 
 .eslogan__h2{
     color:black;
-    font-size: 2.5rem;
-    padding:30px;
+    font-size: 1.8rem;
+    padding:25px;
     text-align: center;
 }
 
-.prestaciones{
+/* .prestaciones{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-}
+} */
 
 .prestaciones__div{
-    width: 30vw;
-    height: 300px;
-    text-align: center;
+    /* width: 30vw;
+    height: 300px; 
+    
     padding: 30px;
-    margin: 15px;
+    margin: 0px 15px 15px ;*/
+    text-align: center;
 }
 
 .prestaciones__img{
-    width: 20vw;
-    height: 200px;
+    width: 100px;
+    height: 100px;
+    
+}
+
+.prestaciones h3{
+    font-size: 1.1rem;
+    margin: 10px;
 }
 
 /* TARJETA TOMOTHERAPY */
 
 .tomotherapy{
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 40px;
-    background-color:#017D9F;
+    
     align-items: center;
-    gap: 40px;
+    gap: 40px; */
+    background-color:#017D9F;
+}
+
+.tomotherapy__iframe{
+    width: 150px;
+    height: 150px;
+    border: 3px solid white;
+}
+
+.tomotherapy__texto{
+    color: white;
+    font-size: 1.3rem;
 }
 
 /* TARJETA SERVICIOS */
@@ -110,18 +131,7 @@ body {
 
 }
 
-.tomotherapy__iframe{
-    width: 30vw;
-    height: 250px;
-    border: 3px solid white;
-}
 
-.tomotherapy__texto{
-    width: 40vw;
-    height: 250px;
-    color: white;
-    font-size: 1.3rem;
-}
 
 /* HEADER */
 
@@ -152,8 +162,8 @@ body {
 
 .header{
     /* width: 100%; */
-    position: sticky;
-    top: 0px;
+    /* position: sticky;
+    top: 0px; */
     /* top: 0px; */
     background-color: rgb(255, 255, 255);
     /* display: flex;
@@ -254,6 +264,7 @@ body {
     align-items: center;
     padding: 10px;
     width: 100%;
+    font-size: 1.1rem;
 
 }
 
@@ -556,6 +567,12 @@ body {
         "logo"
         "redes"
         "ubicacion";
+    }
+
+    .presentation__h1{
+        font-size: 40px;
+        font-weight: 200;
+        top: 10%;
     }
 
 }
