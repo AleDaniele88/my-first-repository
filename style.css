@@ -97,14 +97,14 @@ body {
 }
 
 .tomotherapy__iframe{
-    width: 150px;
-    height: 150px;
+    /* width: 150px;
+    height: 150px; */
     border: 3px solid white;
 }
 
 .tomotherapy__texto{
     color: white;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 /* TARJETA SERVICIOS */
