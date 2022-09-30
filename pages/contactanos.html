@@ -15,7 +15,7 @@
 
 <body>
 
-    <header class="navbar navbar-expand-lg bg-light header">
+    <header class="navbar navbar-expand-lg bg-light sticky-top header">
         <div class="container">
           <a class="navbar-brand" href="#"><img class="header__logo logo" src="../assets/logocos-remove-copy.png" alt="Logo" title="Logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,29 +57,36 @@
 
     <main>
         <h1 class="titulo">Nuestros canales de comunicación</h1>
-        <section class="contacto-container">
-            <form action="" class="contacto-container__form">
-                <label for="name" class="contacto-container__label">Nombre y apellido</label>
-                <input type="text" id="name" class="contacto-container__input" required>
-                <label for="email" class="contacto-container__label">Dirección de correo electrónico</label>
-                <input type="email" id="email" class="contacto-container__input" required>
-                <label for="phone" class="contacto-container__label">Numero de teléfono</label>
-                <input type="number" id="phone" class="contacto-container__input" required>
-                <label for="message" class="contacto-container__label">Escriba su consulta</label>
-                <textarea id="message" cols="30" rows="10" class="contacto-container__input" required></textarea>
-                <input type="submit" value="Enviar" class="contacto-container__input btn">
+        <section class="contacto-container container">
+            <div class="row">
+                <form action="" class="contacto-container__form d-flex flex-column col-lg-6">
+                    <label for="name" class="contacto-container__label">Nombre y apellido</label>
+                    <input type="text" id="name" class="contacto-container__input" required>
+                    <label for="email" class="contacto-container__label">Dirección de correo electrónico</label>
+                    <input type="email" id="email" class="contacto-container__input" required>
+                    <label for="phone" class="contacto-container__label">Numero de teléfono</label>
+                    <input type="number" id="phone" class="contacto-container__input" required>
+                    <label for="message" class="contacto-container__label">Escriba su consulta</label>
+                    <textarea id="message" cols="30" rows="10" class="contacto-container__input mb-3" required></textarea>
+                    <div class="d-flex justify-content-center">
+                        <input type="submit" value="Enviar" class="contacto-container__input btn">
+                    </div>
+                </form>
 
-            </form>
-            <div class="contacto-container__div-info">
-                <ul class="contacto-container__ul">
-                    <li class="contacto-container__li">CENTRO ONCOLÓGICO SUNCHALES</li>
-                    <li class="contacto-container__li">San Juan 1150, Sunchales, Santa Fe</li>
-                    <li class="contacto-container__li">3493 423189 / 424180 / 425880</li>
-                    <li class="contacto-container__li">infocos@atilra.org.ar</li>
-                </ul>
+                <div class="contacto-container__div-info col-lg-6">
+                    <ul class="contacto-container__ul">
+                        <li class="contacto-container__li fs-5">CENTRO ONCOLÓGICO SUNCHALES</li>
+                        <li class="contacto-container__li fs-6">San Juan 1150, Sunchales, Santa Fe</li>
+                        <li class="contacto-container__li fs-6">3493 423189 / 424180 / 425880</li>
+                        <li class="contacto-container__li fs-6">infocos@atilra.org.ar</li>
+                    </ul>
+
+                    <iframe class="contacto-container__iframe w-100 h-50 m-auto mb-3" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9677.991401224765!2d-61.55467852416237!3d-30.951314288891577!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb224c3c5483a4da0!2sCentro%20Oncol%C3%B3gico%20Sunchales%20-%20COS%20Atilra!5e0!3m2!1ses-419!2sar!4v1661956416905!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+                </div>
+                
+                
             </div>
-            <iframe class="contacto-container__iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9677.991401224765!2d-61.55467852416237!3d-30.951314288891577!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb224c3c5483a4da0!2sCentro%20Oncol%C3%B3gico%20Sunchales%20-%20COS%20Atilra!5e0!3m2!1ses-419!2sar!4v1661956416905!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
         </section>
     </main>
    

@@ -332,7 +332,13 @@ body {
 /* CONTACTANOS */
 
 
-.contacto-container{
+.contacto-container__ul{
+    list-style: none;
+    padding: 0;
+
+}
+
+/* .contacto-container{
     display: grid;
     grid-template-columns: 300px 300px;
     grid-template-rows: 300px 300px;
@@ -341,7 +347,7 @@ body {
 
 
 
-}
+} */
 /* .contacto-container{
     height: 70vh;
     display: flex;
@@ -369,10 +375,7 @@ body {
 
 }
 
-.contacto-container__ul{
-    list-style: none;
 
-}
 
 .contacto-container__li{
     margin-bottom: 10px;
@@ -465,9 +468,6 @@ body {
     width: 400px;
     height: 200px;
     text-align: center;
-}
-
-.especialidades__div{
     background-size: cover;
     background-position: center;
     border-radius: 5px;
