@@ -1,0 +1,63 @@
+/* QUIENES SOMOS*/
+
+.dependencias p:first-child{
+    font-weight: bold;
+    font-size: 1.1rem
+}
+
+.dependencias__img{
+    width: 100%;
+    height: 80px;
+    object-fit: contain;
+    
+}
+
+.dependencias__p{
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+@media (min-width:576px) {
+    .dependencias__img{
+        width: 50%;
+        float: left;
+    }
+        
+}
+
+@media (max-width:576px) {
+    .slide{
+        display: none;
+    }
+        
+}
+
+.carousel-item{
+    transition: transform 5s ease, opacity .5s ease-out;
+}
+
+.slide{
+    margin: 10px auto;
+}
+
+.slide-container__item{
+    padding: 15px;
+  
+}
+
+.slide-container__item img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    border:5px solid white;
+}
+
+.btn-1{
+    width: 80px;
+    height: 40px;
+    background-color: #017D9F;
+    color: white;
+    border-radius: 8px;
+    border: none;
+}

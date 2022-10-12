@@ -1,0 +1,44 @@
+/* SERVICIOS */
+
+.especialidades{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    margin: 40px;
+
+}
+
+.especialidades__div{
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+
+.especialidades__h2{
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 10px;
+    margin-top: 50px;
+}
+
+
+.especialidades__div--radio{
+    background-image: url(assets/servicio-tomotherapy.jpg);
+}
+.especialidades__div--quimio{
+    background-image: url(assets/servicio-quimio.JPG);
+}
+.especialidades__div--transplante{
+    background-image: url(assets/servicio-medula.jpeg);
+}
+.especialidades__div--biopsia{
+    background-image: url(assets/servicio-biopsialiquida.jpg);
+}
+.especialidades__div--consultorios{
+    background-image: url(assets/servicio-consultorios.JPG);
+}

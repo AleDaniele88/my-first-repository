@@ -1,1 +1,11 @@
-@import "base/reset"
+@import "utils/variables";
+@import "base/reset";
+@import "layout/footer";
+@import "layout/header";
+@import "components/botones";
+@import "components/titulo-pagina";
+@import "pages/index";
+@import "pages/quienes-somos";
+@import "pages/servicios";
+@import "pages/noticias";
+@import "pages/contactanos";

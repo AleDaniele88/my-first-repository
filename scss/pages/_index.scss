@@ -1,0 +1,121 @@
+/* PORTADA */
+
+.presentation {
+    height: 100vh;
+    background-image: url(./assets/tomotherapy-azul.png);
+    background-size: cover;
+    background-position: center 80%;
+    background-repeat: no-repeat;
+}
+
+.presentation__h1{
+    background-color:rgba(255, 255, 255, 0.75);
+    padding: 5px;
+    font-size: 60px;
+    font-weight: 200;
+    color:#58585A;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 30%;
+}
+
+.presentation__div-img{
+    background-color: rgba(255, 255, 255, 0.75);
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content:space-around;
+    position: relative;
+    top: 30%;
+    opacity: 1;
+}
+
+/* ESLOGAN */
+
+.eslogan{
+    background-color: white;
+    height: auto;
+}
+
+.eslogan__h2{
+    color:black;
+    font-size: 1.8rem;
+    padding:25px;
+    text-align: center;
+}
+
+.prestaciones__div{
+    text-align: center;
+}
+
+.prestaciones__img{
+    width: 100px;
+    height: 100px;
+}
+
+.prestaciones h3{
+    font-size: 1.1rem;
+    margin: 10px;
+}
+
+/* TARJETA TOMOTHERAPY */
+
+.tomotherapy{
+    background-color:#017D9F;
+}
+
+.tomotherapy__iframe{
+    height: 250px;
+    border: 3px solid white;
+}
+
+.tomotherapy__texto{
+    color: white;
+    font-size: 1.1rem;
+}
+
+/* TARJETA SERVICIOS */
+
+.servicios{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.5rem;
+}
+
+.img-size{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    opacity: .58;
+}
+
+.carousel-inner h5{
+    color: black;
+}
+
+.h5, h5 {
+    font-size:1.6rem;
+}
+
+.carousel-control-prev-icon{
+    background-color: black;
+    border-radius: 100%;
+}
+
+.carousel-control-next-icon{
+    background-color: black;
+    border-radius: 100%;
+}
+
+/* TARJETA PROFESIONALES */
+
+.profesionales{
+    color:#017D9F;
+    /* height: 200vh; */
+}
+
+.profesionales__ul{
+    list-style: none;
+}
