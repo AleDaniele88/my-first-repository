@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - COS</title>
+    <title>Centro Oncológico Sunchales | Home</title>
+    <meta name="description" content="Centro Oncológico ubicado en Sunchales, con las mejor tecnología en radioterapia y servicios de quimioterapia, transplante de médula, biopsia líquida y consultorios.">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
@@ -16,6 +17,8 @@
 </head>
 
 <body>
+
+    <!-- HEADER-NAV -->
 
     <header class="navbar navbar-expand-lg bg-light sticky-top header">
         <div class="container">
@@ -44,36 +47,19 @@
         </nav>
         </div>
     </header>
+   
+    <!-- PORTADA DE PRESENTACIÓN -->
 
-    <!-- <header class="header">
-        <img class="header__logo logo" src="./assets/logocos-remove-copy.png" alt="Logo" title="Logo">
-        <nav class="header__nav">
-            <ul class="header__ul">
-                <li class="header__li"><a class="header__a--nav" href="./index.html">Inicio</a></li>
-                <li class="header__li"><a class="header__a--nav" href="./pages/quienes-somos.html">¿Quienes somos?</a></li>
-                <li class="header__li"><a class="header__a--nav" href="./pages/servicios.html">Servicios</a></li>
-                <li class="header__li"><a class="header__a--nav" href="./pages/noticias.html">Noticias</a></li>
-                <li class="header__li"><a class="header__a--nav" href="./pages/contactanos.html">Contactanos</a></li>
-            </ul>
-        </nav>
-    </header> -->
-   
-   
-   
     <section class="presentation">
         <h1 class="presentation__h1">Centro Oncológico Sunchales</h1>
-        <!-- <div class="presentation__div-img">
-            <img class="presentation__img" src="./assets/logo-ospil.png" alt="">
-            <img class="presentation__img" src="./assets/logo-atilra-remove.png" alt="">
-            <img class="presentation__img" src="./assets/logo-ospil.png" alt="">
-            <img class="presentation__img" src="./assets/logofundacionatilra-remov.png" alt="">
-            <img class="presentation__img" src="./assets/logo-delec.svg" alt="">
-        </div> -->
     </section>
 
     
 
     <main>
+
+        <!-- ESLOGAN Y PRESTACIONES -->
+
         <section class="eslogan">
             <h2 class="eslogan__h2">Calidad, tecnología y compromiso al servicio de la salud</h2>
             <div class="eslogan__div prestaciones container">
@@ -94,25 +80,29 @@
             </div>
         </section>
 
+        <!-- TARJETA TOMOTHERAPY -->
+
         <section>
             <article class="tomotherapy container-fluid">
                 <div class="row justify-content-center align-item-center">
                     <div class="d-flex justify-content-center col-lg-6 p-3">
-                        <iframe class="tomotherapy__iframe w-100" src="https://www.youtube.com/embed/pgC-1BSDIMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="tomotherapy__iframe w-100" src="https://www.youtube.com/embed/pgC-1BSDIMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
                     </div>
                     <div class="tomotherapy__texto col-lg-6 p-3">
-                        <h2 class="tomotherapy__h2 fw-bold fs-5">Somos centro de referencia en radioterapia helicoidal en Argentina</h2>
-                        <h3 class="tomotherapy__h3 fs-5">¿Qué es el Tomotherapy?</h3>
-                        <p class="tomotherapy__p fs-6">El sistema Tomotherapy, establece el “Gold Standar” para la terapia de tumores, con un diseño único,
+                        <h2 class="tomotherapy__h2 fw-bold">Somos centro de referencia en radioterapia helicoidal en Argentina</h2>
+                        <h3 class="tomotherapy__h3">¿Qué es el Tomotherapy?</h3>
+                        <p class="tomotherapy__p">El sistema Tomotherapy, establece el “Gold Standar” para la terapia de tumores, con un diseño único,
                             un revolucionado modelo de tratamiento y una precisión en el posicionamiento del paciente. <a
                                 class="tomotherapy__a text-white" href="">Más info...</a></p>
                     </div>
                 </div>
             </article>
 
-            <article class="servicios" data-aos="zoom-in">
+            <!-- TARJETA SERVICIOS -->
+
+            <article class="servicios">
                 <h2 class="servicios__h2">Servicios</h2>
-                <div id="carouselExampleCaptions" class="carousel carousel-fade slide w-75 w-lg-50" data-bs-ride="false">
+                <div id="carouselExampleCaptions" class="carousel  slide w-75 w-lg-50" data-bs-ride="false">
                     <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -120,35 +110,35 @@
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
                     </div>
-                    <div class="carousel-inner bg-white">
+                    <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="./assets/servicio-tomotherapy.jpg" class="d-block img-size" alt="Radioterapia">
+                            <img src="./assets/servicio-tomotherapy.jpg" class="d-block servicios__img" alt="Radioterapia">
                             <div class="carousel-caption">
-                            <h5>RADIOTERAPIA</h5>
+                            <h5 class="servicios__tittle">RADIOTERAPIA</h5>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./assets/servicio-quimio.JPG" class="d-block img-size" alt="Quimioterapia">
+                            <img src="./assets/servicio-quimio.JPG" class="d-block servicios__img" alt="Quimioterapia">
                             <div class="carousel-caption">
-                            <h5>QUIMIOTERAPIA</h5>
+                            <h5 class="servicios__tittle">QUIMIOTERAPIA</h5>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./assets/servicio-biopsialiquida.jpg" class="d-block img-size" alt="Biopsia Liquida">
+                            <img src="./assets/servicio-biopsialiquida.jpg" class="d-block servicios__img" alt="Biopsia Liquida">
                             <div class="carousel-caption">
-                            <h5>BIOPSIA LÍQUIDA</h5>
+                            <h5 class="servicios__tittle">BIOPSIA LÍQUIDA</h5>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./assets/servicio-medula.jpeg" class="d-block img-size" alt="Transplante de médula">
+                            <img src="./assets/servicio-medula.jpeg" class="d-block servicios__img" alt="Transplante de médula">
                             <div class="carousel-caption">
-                            <h5>TRANSPLANTE DE MÉDULA</h5>
+                            <h5 class="servicios__tittle">TRANSPLANTE DE MÉDULA</h5>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./assets/servicio-consultorios.JPG" class="d-block img-size" alt="Consultorios">
+                            <img src="./assets/servicio-consultorios.JPG" class="d-block servicios__img" alt="Consultorios">
                             <div class="carousel-caption">
-                            <h5>CONSULTORIOS</h5>
+                            <h5 class="servicios__tittle">CONSULTORIOS</h5>
                             </div>
                         </div>
                     </div>
@@ -163,27 +153,66 @@
                 </div>
             </article>
 
-            <article class="profesionales">
+            <!-- TARJETA PROFESIONALES -->
+
+            <article class="profesionales container">
                 <h2  class="profesionales__h2">Nuestros profesionales</h2>
-                <h3 class="profesionales__h3">ONCÓLOGOS</h3>
-                <ul class="profesionales__ul">
-                    <li class="profesionales__li">Dr. Muñoz Miguel</li>
-                    <li class="profesionales__li">Dra. Suarez Lucia</li>
-                    <li class="profesionales__li">Dra. Possi Peñalva Beatriz</li>
-                    <li class="profesionales__li">Dr. Molina Emiliano</li>
-                    <li class="profesionales__li">Dra. Rossa Ana</li>
-                </ul>
-                <h3 class="profesionales__h3">RADIOTERAPEUTAS</h3>
-                <ul class="profesionales__ul">
-                    <li class="profesionales__li">Dr. Porratto Cristian</li>
-                </ul>
-                <h3 class="profesionales__h3">PSICÓLOGOS</h3>
-                <ul class="profesionales__ul">
-                    <li class="profesionales__li">Lic. Schaller Patricio</li>
-                </ul>
+                <div class="row text-center">    
+                    <div class="col-lg-4  ">
+                        <h3 class="profesionales__h3">DIRECTOR MÉDICO</h3>
+                        <ul class="profesionales__ul">
+                            <li class="profesionales__li">Dr. Muñoz Miguel</li>
+                        </ul>
+                        <h3 class="profesionales__h3">ONCÓLOGOS/AS</h3>
+                        <ul class="profesionales__ul">
+                            <li class="profesionales__li">Dr. Muñoz Miguel</li>
+                            <li class="profesionales__li">Dra. Suarez Lucia</li>
+                            <li class="profesionales__li">Dra. Possi Peñalva Beatriz</li>
+                            <li class="profesionales__li">Dr. Molina Emiliano</li>
+                            <li class="profesionales__li">Dra. Rossa Ana</li>
+                            <li class="profesionales__li">Dra. Ringa Guillermina</li>
+                            <li class="profesionales__li">Dr. Zurawsky Matias</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <h3 class="profesionales__h3">RADIOTERAPEUTAS</h3>
+                        <ul class="profesionales__ul">
+                            <li class="profesionales__li">Dr. Porratto Cristian</li>
+                            <li class="profesionales__li">Dr. Chinellato Alejandro</li>
+                        </ul>
+                        <h3 class="profesionales__h3">RADIOFISICOS/AS</h3>
+                        <ul class="profesionales__ul">
+                            <li class="profesionales__li">Lic. Martinez Ariel</li>
+                            <li class="profesionales__li">Lic. Ojeda Laura</li>
+                            <li class="profesionales__li">Lic. Velez Graciela</li>
+                        </ul>
+                        <h3 class="profesionales__h3">PSICÓLOGOS</h3>
+                        <ul class="profesionales__ul">
+                            <li class="profesionales__li">Lic. Schaller Patricio</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <h3 class="profesionales__h3">MÉDICO/A CIRUJANO/A</h3>
+                        <ul class="profesionales__ul">
+                            <li class="profesionales__li">Dra. Merli Eliana</li>
+                            <li class="profesionales__li">Dr. Villanueva Ricardo</li>
+                        </ul>
+                        <h3 class="profesionales__h3">CONSULTORES EN CIRUGÍA ONCOLÓGICA DIGESTIVA</h3>
+                        <ul class="profesionales__ul">
+                            <li class="profesionales__li">Dr. Pierini Leandro</li>
+                            <li class="profesionales__li">Dr. Yossen David</li>
+                        </ul>
+                        <h3 class="profesionales__h3">NUTRICIONISTA</h3>
+                        <ul class="profesionales__ul">
+                        <li class="profesionales__li">Lic. Astesana María Virginia</li>
+                        </ul>
+                    </div>
+                </div>
             </article>
         </section>
     </main>
+
+    <!-- FOOTER -->
 
     <footer class="footer-container">
         <h3 class="footer-container__horarios">Comunícate con nosotros en línea de Lunes a Viernes de 08:00 hs a 17:00 hs</h3>
@@ -208,9 +237,9 @@
                 <li>ATILRA ES:</li>
                 <li><a href="https://atilra.org.ar/" target="_blank">Atilra</a></li>
                 <li><a href="https://es-la.facebook.com/FundacionAtilra/" target="_blank">Fundación Atilra</a></li>
-                <li><a href="https://clinicaatilra.com.ar/" target="_blank">Clínica Atilra</a></li>
+                <li><a href="https://www.clinicaatilra.com.ar/" target="_blank">Clínica Atilra</a></li>
                 <li><a href="./index.html">COS Atilra</a></li>
-                <li><a href="http://www.atilraeducacion.org/central" target="_blank">CET Atilra</a></li>
+                <li><a href="http://www.atilraeducacion.org" target="_blank">CET Atilra</a></li>
             </ul>
         </div>
         <div class="footer-container__ubicacion">

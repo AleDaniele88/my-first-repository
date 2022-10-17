@@ -6,30 +6,18 @@
     background-size: cover;
     background-position: center 80%;
     background-repeat: no-repeat;
-}
 
-.presentation__h1{
-    background-color:rgba(255, 255, 255, 0.75);
-    padding: 5px;
-    font-size: 60px;
-    font-weight: 200;
-    color:#58585A;
-    text-align: center;
-    margin: auto;
-    position: relative;
-    top: 30%;
-}
-
-.presentation__div-img{
-    background-color: rgba(255, 255, 255, 0.75);
-    height: 50px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: no-wrap;
-    justify-content:space-around;
-    position: relative;
-    top: 30%;
-    opacity: 1;
+    &__h1{
+        background-color:rgba(255, 255, 255, 0.75);
+        padding: 5px;
+        font-size: 60px;
+        font-weight: 200;
+        color: $color-secondary;
+        text-align: center;
+        margin: auto;
+        position: relative;
+        top: 30%;
+    }
 }
 
 /* ESLOGAN */
@@ -37,85 +25,112 @@
 .eslogan{
     background-color: white;
     height: auto;
+
+    &__h2{
+        color:black;
+        font-size: 1.8rem;
+        padding:25px;
+        text-align: center;
+    }
 }
 
-.eslogan__h2{
-    color:black;
-    font-size: 1.8rem;
-    padding:25px;
-    text-align: center;
-}
+.prestaciones{
+    &__div{
+        text-align: center;
+    }
 
-.prestaciones__div{
-    text-align: center;
-}
+    &__img{
+        width: 100px;
+        height: 100px;
+    }
 
-.prestaciones__img{
-    width: 100px;
-    height: 100px;
-}
-
-.prestaciones h3{
-    font-size: 1.1rem;
-    margin: 10px;
+    & h3{
+        font-size: 1.1rem;
+        margin: 10px;
+    }
 }
 
 /* TARJETA TOMOTHERAPY */
 
 .tomotherapy{
-    background-color:#017D9F;
-}
-
-.tomotherapy__iframe{
-    height: 250px;
-    border: 3px solid white;
-}
-
-.tomotherapy__texto{
+    background-color: $color-primary;
     color: white;
-    font-size: 1.1rem;
+    margin-top:60px;
+    margin-bottom:60px;
+
+    &__iframe{
+        height: 250px;
+        border: 3px solid white;
+    }
+
+    &__h2{
+        font-size: $font-size-tittle;
+    }
+
+    &__h3{
+        font-size: $font-size-subtittle;
+    }
+
+    &__p{
+        font-size: $font-size-text;
+    }
 }
 
 /* TARJETA SERVICIOS */
 
 .servicios{
-    text-align: center;
     margin-top: 40px;
-    font-size: 1.5rem;
+
+    &__h2{
+        text-align: center;
+        font-size: $font-size-tittle;
+        color: $color-primary;
+    }
+
+    &__img{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    &__tittle{
+        background-color: white;
+        width: 50%;
+        margin: auto;
+        padding: 5px;
+        color: black;
+        font-size:1.6rem;
+    }
 }
 
-.img-size{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    opacity: .58;
-}
-
-.carousel-inner h5{
-    color: black;
-}
-
-.h5, h5 {
-    font-size:1.6rem;
-}
-
-.carousel-control-prev-icon{
-    background-color: black;
-    border-radius: 100%;
-}
-
-.carousel-control-next-icon{
-    background-color: black;
-    border-radius: 100%;
-}
 
 /* TARJETA PROFESIONALES */
 
 .profesionales{
-    color:#017D9F;
-    /* height: 200vh; */
+    
+    margin-top:60px;
+    margin-bottom:60px;
+
+    &__h2{
+        color: $color-primary;
+        text-align: center;
+        font-size: $font-size-tittle;
+        margin-bottom: 30px;
+    }
+
+    &__h3{
+        font-size: $font-size-subtittle;
+        color: $color-primary;
+        border-bottom: 2px solid #C3CB1E;
+        display: inline-block;
+    }
+
+    &__ul{
+        font-size: $font-size-text;
+        color: $color-secondary;
+        padding-left: 0;
+    }
+
+   
 }
 
-.profesionales__ul{
-    list-style: none;
-}

@@ -1,12 +1,6 @@
 /* FOOTER */
 
-.icon{
-    width: 30px;
-    height: 30px;
-}
-
 .footer-container{
-    font-size: 1rem;
     font-weight: normal;
     display: grid;
     justify-items: center;
@@ -16,109 +10,112 @@
     "horarios horarios horarios telefono"
     "logo menu atilra ubicacion"
     "redes menu atilra ubicacion";
+
+    &__horarios{
+        grid-area: horarios;
+        background-color:#017D9F;
+        height: 55px;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        width: 100%;
+        font-size: $font-size-subtittle;
+        margin-bottom: 0px;
+        color:rgb(255, 255, 255);
+    }
+
+    &__telefono{
+        grid-area: telefono;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        background-color: white;
+        width: 100%;
+        height: 55px; 
+
+        & a{
+            font-size: $font-size-subtittle;
+            position: relative;
+            top: 2px;
+        }
+
+        & i{
+            font-size: $font-size-tittle;;
+            color: rgb(48, 209, 77);
+            margin: 10px;
+            transition: transform 0.5s, color 0.5s;
+        }
+    }
+
+    &__logo{
+        grid-area: logo;
+        align-self: center;
+        justify-self: center;
+        margin: 10px;
+    }
+
+    &__menu{
+        grid-area: menu;
+        padding: 5px;
+    }
+
+    & ul{
+        padding: 5px;
+
+        & li:first-child{
+            color: #017D9F;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+    }
+
+    & a{
+        text-decoration: none;
+        color: $color-primary;
+        font-weight: bold;
+        transition: color 0.5s;
+    }
+
+    & a:hover{
+        color:$color-secondary;
+    }
+
+    &__atilra{
+        grid-area: atilra;  
+    }
+
+    &__ubicacion{
+        grid-area: ubicacion;
+        padding: 10px;
+        width: 100%;
+
+        & iframe{
+            width: 300px;
+            height: 150px;
+        }
+    }
+
+    &__redes{
+        grid-area: redes;
+        padding: 10px;
+    }
+
+    & ul h3, &__ubicacion h3, &__redes h3{
+        font-size: $font-size-subtittle;
+        font-weight: bold;
+        color: #017D9F;
+    }
+
+    &__redes i{
+        margin: 8px;
+        margin-top: 0;
+        font-size: 1.3rem;
+        display:inline-block;
+        transition: transform 0.5s, color 0.5s;
+    }
 }
 
-.footer-container__horarios{
-    grid-area: horarios;
-    background-color:#017D9F;
-    height: 55px;
-    display:flex;
-    justify-content:center;
-    align-items: center;
-    width: 100%;
-    font-size: 1.1rem;
-    margin-bottom: 0px;
-    color:rgb(255, 255, 255);
-}
 
-.footer-container__telefono{
-    grid-area: telefono;
-    display: flex;
-    background-color: white;
-
-    width: 100%;
-    height: 55px;
-    justify-content:center;
-    align-items: center;
-}
-
-.footer-container__telefono a{
-    font-size: 1.1rem;
-}
-
-.footer-container__telefono i{
-    font-size: 1.8rem;
-    color: rgb(48, 209, 77);
-    margin: 10px;
-}
-
-.footer-container__telefono h4{
-    margin-bottom: 0px;
-}
-
-.footer-container__logo{
-    grid-area: logo;
-    align-self: center;
-    justify-self: center;
-    margin: 10px;
-}
-
-.footer-container__menu{
-    grid-area: menu;
-    padding: 5px;
-}
-
-.footer-container ul li:first-child{
-    color: #017D9F;
-    font-weight: bold;
-    font-size: 1.1rem;
-}
-
-.footer-container ul{
-    list-style: none;
-    padding: 5px;
-}
-
-.footer-container a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-.footer-container__atilra{
-    grid-area: atilra;
-    
-}
-
-.footer-container__ubicacion{
-    grid-area: ubicacion;
-    padding: 10px;
-    width: 100%;
-}
-
-.footer-container__ubicacion iframe{
-    width: 300px;
-    height: 150px;
-}
-
-.footer-container__redes{
-    grid-area: redes;
-    padding: 10px;
-
-}
-
-.footer-container ul h3, .footer-container__ubicacion h3, .footer-container__redes h3{
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: #017D9F;
-}
-
-.footer-container__redes i{
-    margin: 10px;
-    font-size: 1.3rem;
-    display:inline-block;
-    transition: transform 0.5s, color 0.5s;
-}
 
 .bi-facebook:hover{
     transform: scale(1.5);

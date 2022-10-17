@@ -1,10 +1,16 @@
 /* CONTACTANOS */
 
-.contacto-container__ul{
-    list-style: none;
-    padding: 0;
+.contacto-container{
+        &__ul{
+                text-align: center;
+                padding-left: 0;
 
+                & li{
+                        line-height: 35px;
+                }
+        }    
 }
+
 
 .heartbeat {
 	-webkit-animation: heartbeat 1.5s ease-in-out infinite both;

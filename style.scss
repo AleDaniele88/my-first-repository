@@ -13,8 +13,18 @@ a {
   text-decoration: none;
 }
 
+body {
+  background-color: #ffe6cd;
+}
+
 /* FOOTER */
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
 .footer-container {
+  font-size: 1rem;
   font-weight: normal;
   display: grid;
   justify-items: center;
@@ -22,6 +32,7 @@ a {
   text-align: center;
   grid-template-areas: "horarios horarios horarios telefono" "logo menu atilra ubicacion" "redes menu atilra ubicacion";
 }
+
 .footer-container__horarios {
   grid-area: horarios;
   background-color: #017D9F;
@@ -30,81 +41,97 @@ a {
   justify-content: center;
   align-items: center;
   width: 100%;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-bottom: 0px;
   color: rgb(255, 255, 255);
 }
+
 .footer-container__telefono {
   grid-area: telefono;
   display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: white;
   width: 100%;
   height: 55px;
+  justify-content: center;
+  align-items: center;
 }
+
 .footer-container__telefono a {
-  font-size: 1.2rem;
-  position: relative;
-  top: 2px;
+  font-size: 1.1rem;
 }
+
 .footer-container__telefono i {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: rgb(48, 209, 77);
   margin: 10px;
-  transition: transform 0.5s, color 0.5s;
 }
+
+.footer-container__telefono h4 {
+  margin-bottom: 0px;
+}
+
 .footer-container__logo {
   grid-area: logo;
   align-self: center;
   justify-self: center;
   margin: 10px;
 }
+
 .footer-container__menu {
   grid-area: menu;
   padding: 5px;
 }
-.footer-container ul {
-  padding: 5px;
-}
+
 .footer-container ul li:first-child {
   color: #017D9F;
   font-weight: bold;
   font-size: 1.1rem;
 }
+
+.footer-container ul {
+  list-style: none;
+  padding: 5px;
+}
+
 .footer-container a {
   text-decoration: none;
-  color: #017D9F;
+  color: black;
   font-weight: bold;
   transition: color 0.5s;
 }
+
 .footer-container a:hover {
   color: #58585A;
 }
+
 .footer-container__atilra {
   grid-area: atilra;
 }
+
 .footer-container__ubicacion {
   grid-area: ubicacion;
   padding: 10px;
   width: 100%;
 }
+
 .footer-container__ubicacion iframe {
   width: 300px;
   height: 150px;
 }
+
 .footer-container__redes {
   grid-area: redes;
   padding: 10px;
 }
+
 .footer-container ul h3, .footer-container__ubicacion h3, .footer-container__redes h3 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
   color: #017D9F;
 }
+
 .footer-container__redes i {
-  margin: 8px;
-  margin-top: 0;
+  margin: 10px;
   font-size: 1.3rem;
   display: inline-block;
   transition: transform 0.5s, color 0.5s;
@@ -155,6 +182,7 @@ a {
   border-bottom: 2px solid #C3CB1E;
   z-index: 10;
 }
+
 .header__a--nav {
   text-decoration: none;
   font-size: 1.1rem;
@@ -163,14 +191,16 @@ a {
   padding: 5px;
   transition: background-color 0.3s;
 }
+
 .header__a--nav:hover {
   color: #ffffff;
   border-radius: 5px;
   background-color: #017D9F;
 }
 
-body {
-  background-color: #ffe6cd;
+.logo {
+  width: 240px;
+  height: 45px;
 }
 
 .btn-1 {
@@ -193,11 +223,6 @@ body {
   display: inline-block;
   padding: 15px 35px 15px 15px;
   font-size: x-large;
-}
-
-.logo {
-  width: 240px;
-  height: 45px;
 }
 
 /* PORTADA */
@@ -312,32 +337,25 @@ body {
 }
 
 /* QUIENES SOMOS*/
-.dependencias__article {
-  width: 80%;
-  margin: 80px auto;
-}
 .dependencias p:first-child {
   font-weight: bold;
-  font-size: 1.2rem;
-  margin-top: 20px;
+  font-size: 1.1rem;
 }
+
 .dependencias__img {
-  width: 70%;
-  height: 120px;
+  width: 100%;
+  height: 80px;
   object-fit: contain;
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 10px;
 }
+
 .dependencias__p {
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   width: 100%;
 }
 
 @media (min-width: 576px) {
   .dependencias__img {
-    width: 30%;
-    margin-right: 15px;
+    width: 50%;
     float: left;
   }
 }
@@ -357,6 +375,7 @@ body {
 .slide-container__item {
   padding: 15px;
 }
+
 .slide-container__item img {
   width: 100%;
   height: 400px;
@@ -375,6 +394,7 @@ body {
   gap: 30px;
   margin: 40px;
 }
+
 .especialidades__div {
   width: 400px;
   height: 200px;
@@ -383,25 +403,31 @@ body {
   background-position: center;
   border-radius: 5px;
 }
-.especialidades__div--radio {
-  background-image: url(assets/servicio-tomotherapy.jpg);
-}
-.especialidades__div--quimio {
-  background-image: url(assets/servicio-quimio.JPG);
-}
-.especialidades__div--transplante {
-  background-image: url(assets/servicio-medula.jpeg);
-}
-.especialidades__div--biopsia {
-  background-image: url(assets/servicio-biopsialiquida.jpg);
-}
-.especialidades__div--consultorios {
-  background-image: url(assets/servicio-consultorios.JPG);
-}
+
 .especialidades__h2 {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 10px;
   margin-top: 50px;
+}
+
+.especialidades__div--radio {
+  background-image: url(assets/servicio-tomotherapy.jpg);
+}
+
+.especialidades__div--quimio {
+  background-image: url(assets/servicio-quimio.JPG);
+}
+
+.especialidades__div--transplante {
+  background-image: url(assets/servicio-medula.jpeg);
+}
+
+.especialidades__div--biopsia {
+  background-image: url(assets/servicio-biopsialiquida.jpg);
+}
+
+.especialidades__div--consultorios {
+  background-image: url(assets/servicio-consultorios.JPG);
 }
 
 /* NOTICIAS */
@@ -520,4 +546,4 @@ body {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.scss.map */
