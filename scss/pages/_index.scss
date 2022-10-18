@@ -1,3 +1,9 @@
+a.active-link{
+    color:#ffffff;
+    border-radius: 5px;
+    background-color: #017D9F;
+}
+
 /* PORTADA */
 
 .presentation {
@@ -94,12 +100,13 @@
     }
 
     &__tittle{
-        background-color: white;
-        width: 50%;
-        margin: auto;
-        padding: 5px;
-        color: black;
-        font-size:1.6rem;
+        background-color: rgba(0, 0, 0, 0.555);
+        font-size: $font-size-tittle;
+        // width: 50%;
+        // margin: auto;
+        // padding: 5px;
+        // color: black;
+        // font-size:1.6rem;
     }
 }
 
