@@ -6,49 +6,106 @@ a.active-link{
     background-color: #017D9F;
 }
 
-.especialidades{
+.especialidades-container{
+    width: 80%;
+    margin: 50px auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
-    gap: 30px;
-    margin: 40px;
+    align-items: flex-start;
+}
+    
+  
+    
 
-    &__div{
-        width: 400px;
-        height: 200px;
-        text-align: center;
-        background-size: cover;
-        background-position: center;
-        border-radius: 5px;
+.especialidades{
+     width: 300px;
+     height: 200px;
+     text-align: center;
+     background-color: #ffffff;
+     border-radius: 5px;
+     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4);
+     margin: 25px;
+     color:$color-primary;
 
-        &--radio{
-            background-image: url(assets/servicio-tomotherapy.jpg);
-        }
-
-        &--quimio{
-            background-image: url(assets/servicio-quimio.JPG);
-        }
-
-        &--transplante{
-            background-image: url(assets/servicio-medula.jpeg);
-        }
-
-        &--biopsia{
-            background-image: url(assets/servicio-biopsialiquida.jpg);
-        }
-
-        &--consultorios{
-            background-image: url(assets/servicio-consultorios.JPG);
-        }
+    &__i{
+        font-size: 45px
     }
 
     &__h2{
-        background-color: rgba(255, 255, 255, 0.75);
-        padding: 10px;
-        margin-top: 50px;
+        font-size:$font-size-tittle;
     }
 
-}
+    &__p{
+        font-size:$font-size-text;
+    }
+
+    &__radio:hover{
+        background-image: url(./assets/especialidades__radio.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: black;
+        & div{
+            transition: transform 1s;
+            transform: rotate(360deg);
+        }
+    }
+    
+
+    &__quimio:hover{
+        background-image: url(./assets/especialidades__quimio.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: black;
+        
+        
+        
+        & div{
+            transition: transform 1s;
+            transform: rotate(360deg);
+            
+        }
+    }
+    
+    &__cons:hover{
+        background-image: url(./assets/especialidades__cons.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: black;
+        & div{
+            transition: transform 1s;
+            transform: rotate(360deg);
+        }
+    }
+
+    &__tm:hover{
+        background-image: url(./assets/especialidades__tm.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: black;
+        & div{
+            transition: transform 1s;
+            transform: rotate(360deg);
+        }
+    }
+
+    &__bl:hover{
+        background-image: url(./assets/especialidades__bl.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: black;
+        & div{
+            transition: transform 1s;
+            transform: rotate(360deg);
+        }
+    }
+}   
+
+
 
