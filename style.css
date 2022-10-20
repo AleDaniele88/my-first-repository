@@ -250,6 +250,36 @@ a.active-link {
   margin: 10px;
 }
 
+.novedades {
+  margin: 60px auto 60px;
+}
+.novedades__h2 {
+  color: #017D9F;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+.novedades__div-img {
+  display: flex;
+  justify-content: center;
+}
+.novedades__img {
+  width: 50%;
+  padding: 25px;
+}
+
+.carousel-novedades__div {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 350px;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.7);
+}
+.carousel-novedades__img {
+  width: 100%;
+  max-width: 350px;
+  max-height: 400px;
+}
+
 /* TARJETA TOMOTHERAPY */
 .tomotherapy {
   background-color: #017D9F;
@@ -258,7 +288,7 @@ a.active-link {
   margin-bottom: 60px;
 }
 .tomotherapy__iframe {
-  height: 250px;
+  height: 350px;
   border: 3px solid white;
 }
 .tomotherapy__h2 {
@@ -268,32 +298,18 @@ a.active-link {
   font-size: 1.2rem;
 }
 .tomotherapy__p {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
 }
 
 /* TARJETA SERVICIOS */
-.servicios {
-  margin-top: 40px;
-}
-.servicios__h2 {
-  text-align: center;
-  font-size: 1.5rem;
-  color: #017D9F;
-}
-.servicios__img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-}
-.servicios__tittle {
-  background-color: rgba(0, 0, 0, 0.555);
-  font-size: 1.5rem;
-}
-
 /* TARJETA PROFESIONALES */
 .profesionales {
   margin-top: 60px;
   margin-bottom: 60px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4);
 }
 .profesionales__h2 {
   color: #017D9F;
@@ -521,8 +537,8 @@ a.active-link {
 }
 
 .heartbeat {
-  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-  animation: heartbeat 1.5s ease-in-out infinite both;
+  -webkit-animation: heartbeat 3s ease-in-out infinite both;
+  animation: heartbeat 3s ease-in-out infinite both;
 }
 
 @-webkit-keyframes heartbeat {

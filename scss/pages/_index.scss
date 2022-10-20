@@ -56,6 +56,52 @@ a.active-link{
     }
 }
 
+// TARJETA NOVEDADES INSTITUCIONALES
+
+.novedades{
+    margin: 60px auto 60px;
+    &__h2{
+        color: $color-primary;
+        text-align: center;
+        font-size: $font-size-tittle;
+        margin-bottom: 40px;
+    }
+
+    &__div-img{
+         display: flex;
+         justify-content: center;
+    }
+
+    &__img{
+        width: 50%;
+        padding: 25px;
+        
+    }
+}
+
+.carousel-novedades{
+    
+    &__div{
+        width: 80%;
+        margin: 0 auto;
+        max-width: 350px;
+        box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.7);
+    }
+    
+        
+    &__img{
+        width: 100%;
+        max-width: 350px;
+        
+        max-height: 400px;
+        
+
+    }
+        
+}
+
+
+
 /* TARJETA TOMOTHERAPY */
 
 .tomotherapy{
@@ -63,9 +109,10 @@ a.active-link{
     color: white;
     margin-top:60px;
     margin-bottom:60px;
+    
 
     &__iframe{
-        height: 250px;
+        height: 350px;
         border: 3px solid white;
     }
 
@@ -78,37 +125,33 @@ a.active-link{
     }
 
     &__p{
-        font-size: $font-size-text;
+        font-size: $font-size-subtittle;
     }
 }
 
 /* TARJETA SERVICIOS */
 
-.servicios{
-    margin-top: 40px;
+// .servicios{
+//     margin-top: 40px;
 
-    &__h2{
-        text-align: center;
-        font-size: $font-size-tittle;
-        color: $color-primary;
-    }
+//     &__h2{
+//         text-align: center;
+//         font-size: $font-size-tittle;
+//         color: $color-primary;
+//     }
 
-    &__img{
-        width: 100%;
-        height: 400px;
-        object-fit: cover;
-    }
+//     &__img{
+//         width: 100%;
+//         height: 400px;
+//         object-fit: cover;
+//     }
 
-    &__tittle{
-        background-color: rgba(0, 0, 0, 0.555);
-        font-size: $font-size-tittle;
-        // width: 50%;
-        // margin: auto;
-        // padding: 5px;
-        // color: black;
-        // font-size:1.6rem;
-    }
-}
+//     &__tittle{
+//         background-color: rgba(0, 0, 0, 0.555);
+//         font-size: $font-size-tittle;
+        
+//     }
+// }
 
 
 /* TARJETA PROFESIONALES */
@@ -117,6 +160,10 @@ a.active-link{
     
     margin-top:60px;
     margin-bottom:60px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4);
 
     &__h2{
         color: $color-primary;
