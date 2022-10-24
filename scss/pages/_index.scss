@@ -92,7 +92,6 @@ a.active-link{
     &__img{
         width: 100%;
         max-width: 350px;
-        
         max-height: 400px;
         
 
@@ -129,35 +128,11 @@ a.active-link{
     }
 }
 
-/* TARJETA SERVICIOS */
-
-// .servicios{
-//     margin-top: 40px;
-
-//     &__h2{
-//         text-align: center;
-//         font-size: $font-size-tittle;
-//         color: $color-primary;
-//     }
-
-//     &__img{
-//         width: 100%;
-//         height: 400px;
-//         object-fit: cover;
-//     }
-
-//     &__tittle{
-//         background-color: rgba(0, 0, 0, 0.555);
-//         font-size: $font-size-tittle;
-        
-//     }
-// }
-
 
 /* TARJETA PROFESIONALES */
 
 .profesionales{
-    
+    width: 80%;
     margin-top:60px;
     margin-bottom:60px;
     background-color: white;

@@ -7,15 +7,31 @@ a.active-link{
 }
 
 .dependencias{
+
+    &__h2{
+        color: $color-secondary;
+        text-align: center;
+        font-size: $font-size-tittle;
+        margin-top: 50px;
+     
+    }
+
     &__article{
         width: 80%;
-        margin: 50px auto;
+        margin: 30px auto;
     }
 
     & p:first-child{
         font-weight: bold;
         font-size: $font-size-subtittle;
+        color: $color-secondary;
         margin-top: 20px;;
+    }
+
+    & > img {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
     }
 
     &__img{
@@ -30,6 +46,7 @@ a.active-link{
     &__p{
         font-size: $font-size-text;
         width: 100%;
+        color: $color-secondary;
     }
 }
 
@@ -40,12 +57,19 @@ a.active-link{
         margin-right: 5px;
         float: left;
     }
+
+    .dependencias > img{
+          display: none;
+    }
 }
 
 @media (max-width:576px) {
     section.slide{
         display: none;
-    }     
+    } 
+    .dependencias p:first-child{
+        font-size: $font-size-text;
+    }    
 }
 
 .carousel-item{

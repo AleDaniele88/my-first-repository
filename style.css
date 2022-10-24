@@ -74,7 +74,7 @@ a {
 }
 .footer-container a {
   text-decoration: none;
-  color: #017D9F;
+  color: #017d9f;
   font-weight: bold;
   transition: color 0.5s;
 }
@@ -254,7 +254,7 @@ a.active-link {
   margin: 60px auto 60px;
 }
 .novedades__h2 {
-  color: #017D9F;
+  color: #017d9f;
   text-align: center;
   font-size: 1.5rem;
   margin-bottom: 40px;
@@ -282,7 +282,7 @@ a.active-link {
 
 /* TARJETA TOMOTHERAPY */
 .tomotherapy {
-  background-color: #017D9F;
+  background-color: #017d9f;
   color: white;
   margin-top: 60px;
   margin-bottom: 60px;
@@ -301,9 +301,9 @@ a.active-link {
   font-size: 1.2rem;
 }
 
-/* TARJETA SERVICIOS */
 /* TARJETA PROFESIONALES */
 .profesionales {
+  width: 80%;
   margin-top: 60px;
   margin-bottom: 60px;
   background-color: white;
@@ -312,14 +312,14 @@ a.active-link {
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4);
 }
 .profesionales__h2 {
-  color: #017D9F;
+  color: #017d9f;
   text-align: center;
   font-size: 1.5rem;
   margin-bottom: 30px;
 }
 .profesionales__h3 {
   font-size: 1.2rem;
-  color: #017D9F;
+  color: #017d9f;
   border-bottom: 2px solid #C3CB1E;
   display: inline-block;
 }
@@ -336,14 +336,26 @@ a.active-link {
   background-color: #017D9F;
 }
 
+.dependencias__h2 {
+  color: #58585A;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 50px;
+}
 .dependencias__article {
   width: 80%;
-  margin: 50px auto;
+  margin: 30px auto;
 }
 .dependencias p:first-child {
   font-weight: bold;
   font-size: 1.2rem;
+  color: #58585A;
   margin-top: 20px;
+}
+.dependencias > img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
 }
 .dependencias__img {
   width: 100%;
@@ -356,6 +368,7 @@ a.active-link {
 .dependencias__p {
   font-size: 0.8rem;
   width: 100%;
+  color: #58585A;
 }
 
 @media (min-width: 576px) {
@@ -365,10 +378,16 @@ a.active-link {
     margin-right: 5px;
     float: left;
   }
+  .dependencias > img {
+    display: none;
+  }
 }
 @media (max-width: 576px) {
   section.slide {
     display: none;
+  }
+  .dependencias p:first-child {
+    font-size: 0.8rem;
   }
 }
 .carousel-item {
@@ -415,7 +434,7 @@ a.active-link {
   border-radius: 5px;
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4);
   margin: 25px;
-  color: #017D9F;
+  color: #017d9f;
 }
 .especialidades__i {
   font-size: 45px;
@@ -499,7 +518,7 @@ a.active-link {
   text-align: center;
   width: 400px;
   height: 40px;
-  border: 1px solid #017D9F;
+  border: 1px solid #017d9f;
   border-radius: 8px;
   margin: 0 5px;
 }
